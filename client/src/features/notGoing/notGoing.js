@@ -12,11 +12,28 @@ export function NotGoing() {
   }, []);
 
   return (
-    <div className="">
-      {user.map((user) => (
-        <p>{user.first}</p>
-      ))}
+    <div>
+    <h3>Not Going</h3>
+    <div id="containerForUser">
+  {user.map((user) => (
+     <div className="individualCard">
+   
+        <img className="user-image" src={user.picture} alt="userpic" />
+        <span className="info">
+             <strong>Name:</strong> {user.first + " " + user.last} {user.last}
+        </span> 
+        <span className="info">
+            <strong>Phone:</strong> {user.phone}
+        </span>
+        <span className="info">
+            <strong>Email:</strong> {user.email}
+        </span>
+
     </div>
+    
+  ))}
+  </div>
+</div>
   );
 }
 

@@ -5,12 +5,13 @@
 
 .individualCard
  {
-    width:18%;
+    width: 270px;
     display: flex;
     flex-flow: column;
     margin: 0.5% 0.5%;
     border: 1px solid #ccc;
     background-color: #EEEEEE;
+    font-size: 11px;
   
   }
 
@@ -18,12 +19,19 @@
     width: 25%;
     border-radius: 50%;
     margin: 0 auto;
+    padding: 10px 0;
   }
   .individualCard > span {
     text-align: left;
     padding: 0 20%;
-    margin: 2.5% -10% 0 0;
+    margin: 6.5% -9% 0px -44px;
     display: inline-flex;
-    flex-flow: row nowrap;
+    align-content: flex-start;
+    padding-bottom: 2px;
   
+  }
+
+  a {
+      text-decoration: none;
+      color: #000;
   }
