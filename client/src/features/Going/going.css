@@ -1,14 +1,14 @@
-.containerForUser {
+#containerForUser {
     display: flex;
   flex-flow: wrap;
 } 
 
 .individualCard
  {
-    width: 22%;
+    width:18%;
     display: flex;
     flex-flow: column;
-    margin: 2.5% 2.5%;
+    margin: 0.5% 0.5%;
     border: 1px solid #ccc;
     background-color: #EEEEEE;
   
@@ -20,7 +20,7 @@
     margin: 0 auto;
   }
   .individualCard > span {
-    /* align-self: baseline; */
+    text-align: left;
     padding: 0 20%;
     margin: 2.5% -10% 0 0;
     display: inline-flex;
