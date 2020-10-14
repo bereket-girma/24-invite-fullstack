@@ -18,6 +18,7 @@ export const { randomUser, goingUser, notGoingUser } = inviteSlice.actions;
 export const getInvite = () => (dispatch) => {
   axios.get("/api").then((resp) => {
     console.log(resp.data, "x");
+   
     dispatch(randomUser(resp.data));
   });
 };
